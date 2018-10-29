@@ -25,4 +25,8 @@ class TherealrodkPalindromeTest < Minitest::Test
   def test_integer_palindrome
     assert 12321.palindrome?
   end
+
+  def test_blank_palindrome
+    refute "".palindrome?
+  end
 end
